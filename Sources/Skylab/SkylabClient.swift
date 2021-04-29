@@ -86,6 +86,11 @@ public class DefaultSkylabClient : SkylabClient {
         DispatchQueue.global(qos: .background).async {
             let session = URLSession.shared
 
+            if self.user?.userId == nil || self.user?.userId == "" {
+                print("[Skylab] WARN: userId is nil or empty; no varients fetched")
+                return
+            }
+            
             let userContext = self.addContext(user:self.user)
             do {
                 let requestData = try JSONSerialization.data(withJSONObject: userContext, options: [])
