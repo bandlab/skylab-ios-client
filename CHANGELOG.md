@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/amplitude/skylab-ios-client/compare/v1.2.3...v1.2.4) (2021-06-30)
+
+
+### Bug Fixes
+
+* fix bug causing storage load failures ([#10](https://github.com/amplitude/skylab-ios-client/issues/10)) ([3af0213](https://github.com/amplitude/skylab-ios-client/commit/3af021301f9c45736bc4c79225790c051616f43f))
+
 ## [1.2.3](https://github.com/amplitude/skylab-ios-client/compare/v1.2.2...v1.2.3) (2021-06-02)
 
 

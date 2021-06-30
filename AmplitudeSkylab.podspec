@@ -1,4 +1,4 @@
-skylab_version = "1.2.3" # Version is managed automatically by semantic-release, please dont change it manually
+skylab_version = "1.2.4" # Version is managed automatically by semantic-release, please dont change it manually
 
 Pod::Spec.new do |spec|
 
