@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/amplitude/skylab-ios-client/compare/v1.2.4...v1.2.5) (2021-07-01)
+
+
+### Bug Fixes
+
+* dont force unwrap ([e04b238](https://github.com/amplitude/skylab-ios-client/commit/e04b238240494fd00d6d7a3238d39db71fe116da))
+
 ## [1.2.4](https://github.com/amplitude/skylab-ios-client/compare/v1.2.3...v1.2.4) (2021-06-30)
 
 
