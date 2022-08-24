@@ -10,24 +10,49 @@ import XCTest
 
 class SkylabTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testGetUserWithContext() {
+        let client = DefaultSkylabClient(apiKey: "", config: SkylabConfig())
+        _ = client.contextProvider = TestContextProvider()
+        client.user = SkylabUser(
+            deviceId: "device_id",
+            userId: nil,
+            version: "version"
+        )
+        let mergedUser = client.getUserWithContext()
+        let expectedUserAfterMerge = SkylabUser(
+            deviceId: "device_id",
+            userId: nil,
+            version: "version",
+            language: "language",
+            library: "\(SkylabConfig.Constants.Library)/\(SkylabConfig.Constants.Version)"
+        )
+        XCTAssert(mergedUser == expectedUserAfterMerge)
     }
+}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+class TestContextProvider : ContextProvider {
+    func getDeviceId() -> String? {
+        return ""
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func getUserId() -> String? {
+        return nil
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func getVersion() -> String? {
+        return "version2"
     }
-
+    func getLanguage() -> String? {
+        return "language"
+    }
+    func getPlatform() -> String? {
+        return nil
+    }
+    func getOs() -> String? {
+        return nil
+    }
+    func getDeviceManufacturer() -> String? {
+        return nil
+    }
+    func getDeviceModel() -> String? {
+        return nil
+    }
 }

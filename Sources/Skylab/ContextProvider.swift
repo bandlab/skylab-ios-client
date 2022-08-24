@@ -17,3 +17,4 @@ public protocol ContextProvider {
     func getDeviceManufacturer() -> String?
     func getDeviceModel() -> String?
 }
+
