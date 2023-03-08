@@ -37,7 +37,9 @@
     <code class="name">Skylab​Config</code>
 </h1>
 
-<html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">struct</span> <span class="type">SkylabConfig</span></code></pre></body></html>
+<div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">struct</span> <span class="type">SkylabConfig</span> </code></pre>
+</div>
 <section id="relationships">
     <h2 hidden>Relationships</h2>
         
@@ -56,7 +58,16 @@
     <h3>
         <code>init(debug:​debug​Enrollment​Requests:​fallback​Variant:​initial​Flags:​instance​Name:​server​Url:​)</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">init</span>(<span class="variable">debug</span>: <span class="type">Bool</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">Debug</span>, <span class="variable">debugEnrollmentRequests</span>: <span class="type">Bool</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">DebugEnrollmentRequests</span>, <span class="variable">fallbackVariant</span>: <a href="/skylab-ios-client/Variant"><span class="type">Variant</span></a>? = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">FallbackVariant</span>, <span class="variable">initialFlags</span>: [<span class="type">String</span>: <a href="/skylab-ios-client/Variant"><span class="type">Variant</span></a>] = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">InitialFlags</span>, <span class="variable">instanceName</span>: <span class="type">String</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">InstanceName</span>, <span class="variable">serverUrl</span>: <span class="type">String</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">ServerUrl</span>)</code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">init</span>(
+        <span class="variable">debug</span>: <span class="type">Bool</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">Debug</span>,
+        <span class="variable">debugEnrollmentRequests</span>: <span class="type">Bool</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">DebugEnrollmentRequests</span>,
+        <span class="variable">fallbackVariant</span>: <span class="type">Variant</span>? = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">FallbackVariant</span>,
+        <span class="variable">initialFlags</span>: [<span class="type">String</span>: <span class="type">Variant</span>] = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">InitialFlags</span>,
+        <span class="variable">instanceName</span>: <span class="type">String</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">InstanceName</span>,
+        <span class="variable">serverUrl</span>: <span class="type">String</span> = <span class="variable">SkylabConfig</span>.<span class="type">Defaults</span>.<span class="type">ServerUrl</span>
+    ) </code></pre>
+</div>
 </div>
     </section>
     <section id="properties">
@@ -66,37 +77,49 @@
     <h3>
         <code>debug</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">debug</span>: <span class="type">Bool</span></code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">debug</span>: <span class="type">Bool</span></code></pre>
+</div>
 </div>
 <div role="article" class="variable" id="skylabconfig.debugenrollmentrequests">
     <h3>
         <code>debug​Enrollment​Requests</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">debugEnrollmentRequests</span>: <span class="type">Bool</span></code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">debugEnrollmentRequests</span>: <span class="type">Bool</span></code></pre>
+</div>
 </div>
 <div role="article" class="variable" id="skylabconfig.fallbackvariant">
     <h3>
         <code>fallback​Variant</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">fallbackVariant</span>: <a href="/skylab-ios-client/Variant"><span class="type">Variant</span></a>?</code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">fallbackVariant</span>: <span class="type">Variant</span>?</code></pre>
+</div>
 </div>
 <div role="article" class="variable" id="skylabconfig.initialflags">
     <h3>
         <code>initial​Flags</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">initialFlags</span>: [<span class="type">String</span>: <a href="/skylab-ios-client/Variant"><span class="type">Variant</span></a>]</code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">initialFlags</span>: [<span class="type">String</span>: <span class="type">Variant</span>]</code></pre>
+</div>
 </div>
 <div role="article" class="variable" id="skylabconfig.instancename">
     <h3>
         <code>instance​Name</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">instanceName</span>: <span class="type">String</span></code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">instanceName</span>: <span class="type">String</span></code></pre>
+</div>
 </div>
 <div role="article" class="variable" id="skylabconfig.serverurl">
     <h3>
         <code>server​Url</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">let</span> <span class="variable">serverUrl</span>: <span class="type">String</span></code></pre></body></html>
+    <div class="declaration">
+<pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">serverUrl</span>: <span class="type">String</span></code></pre>
+</div>
 </div>
     </section>
 
@@ -107,7 +130,7 @@
 
     <footer>
         <p>
-    Generated on <time datetime="2021-03-30T09:54:51-0700">March 30, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.5</span>.
+    Generated on <time datetime="2021-05-05T22:59:15+0000">May 5, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.6</span>.
 </p>
     </footer>
 </body>
